@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Edin Kaymakqi | Front-End Developer',
+    title: 'Edin Kaymakqi',
     author: 'Edin Kaymakqi',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
