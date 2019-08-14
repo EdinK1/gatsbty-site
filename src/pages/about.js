@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Head from '../components/head'
-
 import Layout from '../components/layout'
 
-const AboutPage = () => {
+const AboutPage = ({ location }) => {
   return (
-    <Layout>
+    <Layout isOpen={location ? location.state.isToggled : null}>
       <Head title="About" />
       <h1>About</h1>
       <p>About page of the page</p>

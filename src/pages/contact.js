@@ -1,11 +1,10 @@
 import React from 'react'
-
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-const ContactPage = () => {
+const ContactPage = ({ location }) => {
   return (
-    <Layout>
+    <Layout isOpen={location ? location.state.isToggled : null}>
       <Head title="Contact" />
       <h1>Contact me</h1>
       <p>

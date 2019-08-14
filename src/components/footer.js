@@ -17,7 +17,11 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <p>
-        Created with &#9749; by {data.site.siteMetadata.author}, &copy; 2019
+        Created with{' '}
+        <span role="img" aria-label="coffe">
+          &#9749;
+        </span>{' '}
+        by {data.site.siteMetadata.author}, &copy; 2019
       </p>
     </footer>
   )

@@ -1,9 +1,16 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import React, { useState } from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import {
+  FaHome,
+  FaUserTie,
+  FaCode,
+  FaBloggerB,
+  FaEnvelope,
+  FaBars,
+} from 'react-icons/fa'
+import headerStyles from './header.module.scss'
 
-import headerStyles from "./header.module.scss"
-
-const Header = () => {
+const Header = ({ isOpen = false }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -14,49 +21,81 @@ const Header = () => {
     }
   `)
 
+  const [isToggled, setToggled] = useState(isOpen)
+
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-      <nav>
-        <ul className={headerStyles.navList}>
+      <div className={headerStyles.headerTop}>
+        <h1>
+          <Link
+            state={{ isToggled }}
+            className={`${headerStyles.title} ${
+              isToggled ? headerStyles.show : ''
+            }`}
+            to="/"
+          >
+            {data.site.siteMetadata.title}
+          </Link>
+        </h1>
+        <FaBars
+          onClick={() => setToggled(!isToggled)}
+          className={headerStyles.headerHamburger}
+        />
+      </div>
+      <nav className={headerStyles.nav}>
+        <ul
+          className={`${headerStyles.navList} ${
+            isToggled ? headerStyles.showNav : ''
+          }`}
+        >
           <li>
             <Link
+              state={{ isToggled }}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
-              Home
+              <FaHome />
             </Link>
           </li>
           <li>
             <Link
+              state={{ isToggled }}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/about"
             >
-              About
+              <FaUserTie />
             </Link>
           </li>
           <li>
             <Link
+              state={{ isToggled }}
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/project"
+            >
+              <FaCode />
+            </Link>
+          </li>
+          <li>
+            <Link
+              state={{ isToggled }}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/blog"
             >
-              Blog
+              <FaBloggerB />
             </Link>
           </li>
           <li>
             <Link
+              state={{ isToggled }}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact
+              <FaEnvelope />
             </Link>
           </li>
         </ul>
