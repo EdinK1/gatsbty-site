@@ -1,0 +1,31 @@
+.greeting {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.me {
+  font-weight: 600;
+}
+
+.location {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.view-work-btn {
+  background: transparent;
+  border: 1px solid cyan;
+  text-align: center;
+  width: 100%;
+  padding: 0.75rem 0;
+  margin-top: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background: cyan;
+    color: #000;
+  }
+}
