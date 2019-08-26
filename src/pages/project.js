@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import Layout from "../components/layout";
 import Head from "../components/head";
@@ -68,3 +69,19 @@ const Project = ({ location, desc }) => (
 );
 
 export default Project;
+=======
+import React from 'react'
+import Layout from '../components/layout'
+import Head from '../components/head'
+
+const Project = ({ location }) => {
+  return (
+    <Layout isOpen={location ? location.state.isToggled : null}>
+      <Head title="Project" />
+      <h1>Some of my projects </h1>
+    </Layout>
+  )
+}
+
+export default Project
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b

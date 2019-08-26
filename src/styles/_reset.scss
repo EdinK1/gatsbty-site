@@ -7,6 +7,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
+=======
+  max-width: 100vw;
+  overflow: hidden;
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 }
 article,
 aside,
@@ -46,7 +51,10 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 }
 abbr[title] {
   border-bottom: none;
@@ -125,6 +133,7 @@ button,
 select {
   text-transform: none;
 }
+<<<<<<< HEAD
 [type="reset"],
 [type="submit"],
 button,
@@ -134,13 +143,30 @@ html [type="button"] {
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner,
+=======
+[type='reset'],
+[type='submit'],
+button,
+html [type='button'] {
+  -webkit-appearance: button;
+}
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+<<<<<<< HEAD
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring,
+=======
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -160,6 +186,7 @@ legend {
 textarea {
   overflow: auto;
 }
+<<<<<<< HEAD
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -175,6 +202,23 @@ textarea {
 }
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
+=======
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
@@ -205,10 +249,17 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+<<<<<<< HEAD
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+=======
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 }
 img {
   max-width: 100%;
@@ -572,10 +623,17 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+<<<<<<< HEAD
   font-feature-settings: "tnum";
   -moz-font-feature-settings: "tnum";
   -ms-font-feature-settings: "tnum";
   -webkit-font-feature-settings: "tnum";
+=======
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -593,8 +651,13 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
+<<<<<<< HEAD
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
+=======
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -608,11 +671,19 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
+<<<<<<< HEAD
   content: " ";
+=======
+  content: ' ';
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
+<<<<<<< HEAD
   content: "";
+=======
+  content: '';
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
 }

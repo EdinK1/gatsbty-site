@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
@@ -25,3 +26,20 @@ const IndexPage = ({ location }) => {
 };
 
 export default IndexPage;
+=======
+import React from 'react'
+import Layout from '../components/layout'
+import Head from '../components/head'
+
+const IndexPage = ({ location }) => {
+  return (
+    <Layout isOpen={location.state ? location.state.isToggled : null}>
+      <Head title="Home" />
+      <h1>Hello</h1>
+      <h2>I'm Edin, a full-stack developer living in Vancouver</h2>
+    </Layout>
+  )
+}
+
+export default IndexPage
+>>>>>>> 397b17ff921531db8857eee8dc607e3fb522d08b
